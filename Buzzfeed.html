@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: lightblue;
+                font-family: Helvetica;
+            }
+
+            #main {
+                width: 80%;
+                border: 1px gray solid;
+                margin: auto;
+                padding: 50px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #header {
+                margin-top: 0;
+                border: 2px solid black;
+                padding: 5px;
+                height: 250px;
+            }
+
+            label {
+                width: 300px;
+                padding: 5px;
+                display: inline-block;
+                color: black;
+            }
+
+            button {
+                display: block;
+                margin-top: 20px;
+
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header"><h1>ANSWER 8 QUESTIONS AND WE WILL REVEAL IF YOU ARE GOING TO PASS THIS SEMESTER
+                </h1></div>
+
+            <form  id="form1">
+
+                <p>Which of these Canadian cities would you want to travel to?</p></td><td>
+            <label><input type="radio" name="city" id="Mississauga" value="1" />Mississauga</label>
+            <label><input type="radio" name="city" id="Kitchener" value="2" />Kitchener</label>
+            <label><input type="radio" name="city" id="Vancouver" value="3" />Vancouver</label>
+            <label><input type="radio" name="city" id="Calgary" value="4" />Calgary</label>
+            <label><input type="radio" name="city" id="Waterloo" value="5" />Waterloo</label>
+            <label><input type="radio" name="city" id="Saskatoon" value="6" />Saskatoon</label>
+            <label><input type="radio" name="city" id="Leave" value="7" />I would like to leave Canada</label>
+
+
+            <p>Which of these subjects interest you?</p>
+            <label><input type="radio" name="subjects" id="English" value="1" />English</label>
+            <label><input type="radio" name="subjects" id="Mathematics" value="2" />Mathematics</label>
+            <label><input type="radio" name="subjects" id="Philosophy" value="3" />Philosophy</label>
+            <label><input type="radio" name="subjects" id="Chemistry" value="4" />Chemistry</label>
+            <label><input type="radio" name="subjects" id="Engineering" value="5" />Engineering</label>
+            <label><input type="radio" name="subjects" id="Graphic Design" value="6" />Graphic Design</label>
+            <label><input type="radio" name="subjects" id="Writing" value="7" />Writing</label>
+
+            <p>If you were to graduate, what would your graduation party be like?</p>
+            <label><input type="radio" name="party" id="None-existent" value="1" />None-existent</label>
+            <label><input type="radio" name="party" id="Party" value="2" />Party till dawn</label>
+            <label><input type="radio" name="party" id="Drink" value="3" />Drink all night</label>
+            <label><input type="radio" name="party" id="Sleeping" value="4" />Sleeping</label>
+            <label><input type="radio" name="party" id="Preparing" value="5" />Preparing for the next chapter of life</label>
+            <label><input type="radio" name="party" id="Eating" value="6" />Eating</label>
+            <label><input type="radio" name="party" id="Books" value="7" />Get back to the books</label>
+
+            <p>Who is your favorite professor?</p>
+            <label><input type="radio" name="prof" id="Vivian" value="1" />Vivian Stamatopoulos</label>
+            <label><input type="radio" name="prof" id="don’t know" value="2" />I don’t know these people</label>
+            <label><input type="radio" name="prof" id="Ronn" value="3" />Ronn Young</label>
+            <label><input type="radio" name="prof" id="don’t care" value="4" />I don’t care</label>
+            <label><input type="radio" name="prof" id="Rupinder" value="5" />Rupinder Brar</label>
+            <label><input type="radio" name="prof" id="don’t like" value="6" />I don’t like professors</label>
+            <label><input type="radio" name="prof" id="T.A" value="7" />My favorite professor is a T.A</label>
+
+            <p>Which of these dorm room appeals to you the most?</p>
+            <label><input type="radio" name="room" id="room1" value="1" /><img src="image1.jpg"></label>
+            <label><input type="radio" name="room" id="room2" value="2" /><img src="image2.png"></label>
+            <label><input type="radio" name="room" id="room3" value="3" /><img src="image3.jpg"></label>
+            <label><input type="radio" name="room" id="room4" value="4" /><img src="image4.png"></label>
+
+            <p>Finally, What’s your dream job?</p></td><td>
+            <label><input type="radio" name="job" id="Engineer" value="1" />Engineer</label>
+            <label><input type="radio" name="job" id="Game" value="2" />Game Designer</label>
+            <label><input type="radio" name="job" id="don’t care2" value="3" /> I don’t care</label>
+            <label><input type="radio" name="job" id="Scientist" value="4" />Scientist</label>
+            <label><input type="radio" name="job" id="Doctor" value="5" />Doctor/Nurse</label>
+            <label><input type="radio" name="job" id="money" value="6" />Whatever makes money</label>
+            <label><input type="radio" name="job" id="Lawyer" value="7" />Lawyer</label>
+
+            <button id="myBtn" type="submit" value="Submit">Submit</button>
+            </td></tr>
+        </form>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="answer"></p>
+        <p id="answer2"></p>
+    </div>
+
+</div>
+
+<script>
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    } 
+
+    document.getElementById("form1").onsubmit=function() {
+
+        city = parseInt(document.querySelector('input[name = "city"]:checked').value);
+        subjects = parseInt(document.querySelector('input[name = "subjects"]:checked').value);
+        party = parseInt(document.querySelector('input[name = "party"]:checked').value);
+        prof = parseInt(document.querySelector('input[name = "prof"]:checked').value);
+        room = parseInt(document.querySelector('input[name = "room"]:checked').value);
+        job = parseInt(document.querySelector('input[name = "job"]:checked').value);
+
+        total= city + subjects + party + prof + room + job;
+
+
+        document.getElementById("answer").innerHTML = total;
+
+
+
+        if(total < 13) {
+            document.getElementById("answer2").innerHTML = "You are an amazing person, you will pass the semester and excel in the life. This is your year!";
+        }
+
+        if(total >=13 && total < 26) {
+            document.getElementById("answer2").innerHTML = "You are an energetic person, nothing can stop you this semester; all need you need to do is put extra effort and you are sure to make this semester your best yet.";
+        }
+
+        if(total >=26) {
+            document.getElementById("answer2").innerHTML = "Why are you taking this quiz? You are a genius. Your mother loves you.";
+        }   
+        return false; // required to not refresh the page; just leave this here
+    }// end the submit function
+
+
+</script>
+
+
+
+</body>
+</html>
